@@ -11,5 +11,5 @@ class Receipt(Base):
     ord_id = Column(UUID(as_uuid=True), nullable=False)
     type = Column(String, nullable=False)
     customer_info = Column(String, nullable=False)
-    create_date = Column(DateTime, nullable=False)
+    create_date = Column(String, nullable=False)
     rec = Column(String, nullable=False)

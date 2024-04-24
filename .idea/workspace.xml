@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbbf8167-c145-4f17-b25f-7599724d5fe9" name="Changes" comment="Commit 7">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/ci-cd.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ci-cd.yml" afterDir="false" />
+    <list default="true" id="bbbf8167-c145-4f17-b25f-7599724d5fe9" name="Changes" comment="Commit 8">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_order/app/services/order_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_order/app/services/order_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_receipt/tests/integration/test_db_receipt_repo.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_receipt/tests/integration/test_db_receipt_repo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_receipt/tests/unit/test_receipt_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_receipt/tests/unit/test_receipt_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_receipt/app/models/receipt.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_receipt/app/models/receipt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_receipt/app/schemas/receipt.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_receipt/app/schemas/receipt.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +144,21 @@
       <option name="project" value="LOCAL" />
       <updated>1713956341026</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Commit 8">
+      <created>1713973075468</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1713973075468</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Commit 8">
+      <created>1713973421384</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1713973421385</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -168,6 +180,7 @@
     <MESSAGE value="Commit 5" />
     <MESSAGE value="Commit 6" />
     <MESSAGE value="Commit 7" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 7" />
+    <MESSAGE value="Commit 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 8" />
   </component>
 </project>
