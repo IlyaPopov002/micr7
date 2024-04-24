@@ -24,7 +24,7 @@ def receipt_id() -> UUID:
 def first_receipt() -> Receipt:
     return Receipt(rec_id=UUID('31babbb3-5541-4a2a-8201-537cdff25fed'),
                     ord_id=UUID('31babbb3-5541-4a2a-8201-537cdff25fed'),
-                    type='test_rec_type_1', create_date=datetime.now(),
+                    type='test_rec_type_1', create_date=str(datetime.now().date()),
                     rec='test_rec_rec_1', customer_info='test_customer_info_0')
 
 
@@ -32,13 +32,13 @@ def first_receipt() -> Receipt:
 def second_receipt() -> Receipt:
     return Receipt(rec_id=UUID('45309954-8e3c-4635-8066-b342f634252c'),
                     ord_id=UUID('45309954-8e3c-4635-8066-b342f634252c'),
-                    type='test_rec_type_2', create_date=datetime.now(),
+                    type='test_rec_type_2', create_date=str(datetime.now().date()),
                     rec='test_rec_rec_2', customer_info='test_customer_info_1')
 
 
-# def test_empty_list(receipt_repo: ReceiptRepo) -> None:
-#     receipt_repo.delete_all_receipt()
-#     assert receipt_repo.get_receipt() == []
+def test_empty_list(receipt_repo: ReceiptRepo) -> None:
+    receipt_repo.delete_all_receipt()
+    assert receipt_repo.get_receipt() == []
 
 
 def test_add_first_receipt(first_receipt: Receipt, receipt_repo: ReceiptRepo) -> None:

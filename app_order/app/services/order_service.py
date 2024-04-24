@@ -8,6 +8,7 @@ from fastapi import Depends
 
 from app.models.order import Order, OrderStatus
 from app.repositories.db_order_repo import OrderRepo
+#from app_order.app.rabbitmq import send_to_receipt_queue
 
 
 class OrderService():
@@ -26,7 +27,7 @@ class OrderService():
         return self.order_repo.create_order(order)
 
     def accepted_order(self, id: UUID) -> Order:
-        from app_order.app.rabbitmq import send_to_receipt_queue
+        #from app_order.app.rabbitmq import send_to_receipt_queue
         order = self.order_repo.get_order_by_id(id)
         if order.status != OrderStatus.CREATE:
             raise ValueError
@@ -42,7 +43,7 @@ class OrderService():
             "customer_info": order.customer_info
         }
 
-        asyncio.run(send_to_receipt_queue(receipt_data))
+        #asyncio.run(send_to_receipt_queue(receipt_data))
 
         return self.order_repo.set_status(order)
 

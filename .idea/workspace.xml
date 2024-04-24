@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbbf8167-c145-4f17-b25f-7599724d5fe9" name="Changes" comment="Commit 7">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/ci-cd.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ci-cd.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_order/app/services/order_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_order/app/services/order_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_receipt/tests/integration/test_db_receipt_repo.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_receipt/tests/integration/test_db_receipt_repo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_receipt/tests/unit/test_receipt_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_receipt/tests/unit/test_receipt_service.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1713954340825</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Commit 7">
+      <created>1713956341026</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1713956341026</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

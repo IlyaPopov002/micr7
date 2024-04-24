@@ -55,13 +55,13 @@ def test_get_receipt_full(
         receipt_service: ReceiptService
 ) -> None:
     receipt = receipt_service.get_receipt()
-    assert len(receipts) == 2
-    assert receipts[0].ord_id == first_receipt_data[0]
-    assert receipts[0].type == first_receipt_data[1]
-    assert receipts[0].rec == first_receipt_data[2]
-    assert receipts[0].customer_info == first_receipt_data[3]
+    assert len(receipt) == 2
+    assert receipt[0].ord_id == first_receipt_data[0]
+    assert receipt[0].type == first_receipt_data[1]
+    assert receipt[0].rec == first_receipt_data[2]
+    assert receipt[0].customer_info == first_receipt_data[3]
 
-    assert receipts[1].ord_id == second_receipt_data[0]
-    assert receipts[1].type == second_receipt_data[1]
-    assert receipts[1].rec == second_receipt_data[2]
-    assert receipts[1].customer_info == second_receipt_data[3]
+    assert receipt[1].ord_id == second_receipt_data[0]
+    assert receipt[1].type == second_receipt_data[1]
+    assert receipt[1].rec == second_receipt_data[2]
+    assert receipt[1].customer_info == second_receipt_data[3]
