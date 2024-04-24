@@ -28,7 +28,7 @@ class ReceiptService():
         return self.receipt_repo.get_receipt()
 
     def create_receipt(self, ord_id: UUID, type: str, rec: str, customer_info: str) -> Receipt:
-        receipt = Receipt(rec_id=uuid4(), ord_id=ord_id, type=type, create_date=datetime.now(),
+        receipt = Receipt(rec_id=uuid4(), ord_id=ord_id, type=type, create_date=str(datetime.now().date()),
                             rec=rec, customer_info=customer_info)
 
         return self.receipt_repo.create_receipt(receipt)

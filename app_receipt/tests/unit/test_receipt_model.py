@@ -13,7 +13,7 @@ rec_id: UUID
 ord_id: UUID
 type: str
 customer_info: str
-create_date: datetime
+create_date: str
 rec: str
 
 
@@ -21,7 +21,7 @@ def test_receipt_creation():
     rec_id = uuid4()
     ord_id = uuid4()
     type = 'test_rec_type_1'
-    create_date = datetime.now()
+    create_date = str(datetime.now().date())
     rec = 'test_rec_rec_1'
     customer_info = 'test_customer_info_0'
 
@@ -46,6 +46,6 @@ def test_receipt_ord_id_required():
     with pytest.raises(ValidationError):
         Receipt(rec_id=uuid4(),
                  type='test_rec_type_1',
-                 create_date=datetime.now(),
+                 create_date=str(datetime.now().date()),
                  rec='test_rec_rec_1',
                  customer_info='test_customer_info_0')

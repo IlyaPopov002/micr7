@@ -19,7 +19,7 @@ def test_add_first_receipt() -> None:
     receipt = Receipt(rec_id=UUID('31babbb3-5541-4a2a-8201-537cdff25fed'),
                         ord_id=uuid4(),
                         type='test_rec_type_1',
-                        create_date=datetime.now(),
+                        create_date=str(datetime.now().date()),
                         rec='test_rec_rec_1',
                         customer_info='test_customer_info_0')
     assert receipt_test_repo.create_receipt(receipt) == receipt
@@ -29,7 +29,7 @@ def test_add_first_receipt_repeat() -> None:
     receipt = Receipt(rec_id=UUID('31babbb3-5541-4a2a-8201-537cdff25fed'),
                         ord_id=uuid4(),
                         type='test_rec_type_1',
-                        create_date=datetime.now(),
+                        create_date=str(datetime.now().date()),
                         rec='test_rec_rec_1',
                         customer_info='test_customer_info_0')
     # receipt_test_repo.create_receipt(receipt)
@@ -41,7 +41,7 @@ def test_get_receipt_by_id() -> None:
     receipt = Receipt(rec_id=uuid4(),
                         ord_id=uuid4(),
                         type='test_rec_type_1',
-                        create_date=datetime.now(),
+                        create_date=str(datetime.now().date()),
                         rec='test_rec_rec_1',
                         customer_info='test_customer_info_0')
     receipt_test_repo.create_receipt(receipt)
