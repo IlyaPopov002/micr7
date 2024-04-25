@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbbf8167-c145-4f17-b25f-7599724d5fe9" name="Changes" comment="Commit 9">
+    <list default="true" id="bbbf8167-c145-4f17-b25f-7599724d5fe9" name="Changes" comment="Commit 10">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_receipt/app/services/receipt_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_receipt/app/services/receipt_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_receipt/tests/unit/test_receipt_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_receipt/tests/unit/test_receipt_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_receipt/tests/unit/test_receipt_repo_local.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_receipt/tests/unit/test_receipt_repo_local.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1713973629155</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Commit 10">
+      <created>1713974274188</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1713974274188</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -190,6 +194,7 @@
     <MESSAGE value="Commit 7" />
     <MESSAGE value="Commit 8" />
     <MESSAGE value="Commit 9" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 9" />
+    <MESSAGE value="Commit 10" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 10" />
   </component>
 </project>
